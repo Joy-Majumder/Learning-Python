@@ -9,6 +9,9 @@
 # print(friends[0]) # lists are mutable
 # print(friends[0:2]) # we can do list slice also
 
+# marks = [["Joy",100],["Pritom",200],["Rohan",12]] # we can do list under list in python
+# print(marks)
+
 # List Methods
 
 # friends = ["app","orr",5,3.1416,False,"Jay","Sneha"]
