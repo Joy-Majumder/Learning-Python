@@ -69,20 +69,34 @@ a = {
 # s.add(1)
 # s.add(2)
 # print(s) # set {1,2}
-# a = {1,2,2,3,4,4,5,6} # this will not gonna print repeated values , it will print only all values once not multiple times
+# a = {1,2,2,3,4,4,5,6} # this will not gonna print repeated values , it will print only all values once not multiple times, also if we need ordered version then we need to use lists rather than set.
+
 # print(a)
-
-# Set methods in python
-
-s = {1,2,3,4,5,"Joy"} # we can also add str in set and its type will be same as set
-s.add("Asa") # we can also add in a set using add function
-print(s.copy()) # we can copy through using copy function in set of python
-# print(s.remove("Joy")) # by using this function we can remove any element from from the set
-print(s.pop())
-print(s, type(s))
 
 # PROPERTIES OF SETS in python
 # 1. Sets are unordered => Element’s order doesn’t matter
 # 2. Sets are unindexed => Cannot access elements by index
 # 3. There is no way to change items in sets.
 # 4. Sets cannot contain duplicate values.
+
+# Set methods and OPERATIONS ON SETS in python
+
+s = {1,2,3,4,5,"Joy"} # we can also add str in set and its type will be same as set
+# s.add("Asa") # we can also add in a set using add function
+# print(s.copy()) # we can copy through using copy function in set of python
+# print(s.remove("Joy")) # by using this function we can remove any element from the set
+# print(s.pop()) # This pop function does not have any specific order to popout elements its remove randomly
+# A = {1, 2, 3, 4}
+# B = {3, 4, 5}
+# print(B.difference(A)) # by using this function we usually do (a-b) in set! A.difference(B) means A-B in set
+# print(A.union(B)) # By using this we can do union with both sets in python
+# print(s,s.discard("Joy")) # we do remove Joy using this function discard function
+# print(A.intersection(B)) # Using this function it does take "common in all sets"
+# print(A.issubset(B)) # false cause 1,2,3,4 is not available in B thats why it returns false if elements of A exists in B set then it will return True
+# print(A.intersection(B)) # Elements of A should available in B set like : 3 and 4 are present in both sets.
+# print(A.isdisjoint(B)) # There should No common elements in sets
+# print(A.issuperset(B)) # issuperset() checks whether A set contains all elements of another set. A contains all elements of B
+# A.difference_update(B) # difference_update() removes all elements from the original set that are also present in another set (or sets).3 and 4 are in both sets → removed from A 1 and 2 remain
+# print(A)
+# print(len(a)) # By using this len() function we can find length of the set
+print(s, type(s))
